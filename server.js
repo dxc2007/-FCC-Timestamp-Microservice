@@ -14,7 +14,7 @@ app.get('/', function(req, res) {
 
 app.get('/:date', function(req, res) {
     var input = req.params.date
-    if (/[a-zA-Z]/g.test(input) == false) {
+    if (/[a-zA-Z,:-]/.test(input) == false) {
         input = +req.params.date
     }
     console.log(input)
