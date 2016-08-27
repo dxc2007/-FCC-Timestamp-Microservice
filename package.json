@@ -1,0 +1,27 @@
+{
+  "name": "timestamp",
+  "version": "1.0.0",
+  "description": "fcctimestampproject",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dxc2007/-FCC-Timestamp-Microservice.git"
+  },
+  "keywords": [
+    "fcc",
+    "timestamp",
+    "microservice"
+  ],
+  "author": "dxc2007",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dxc2007/-FCC-Timestamp-Microservice/issues"
+  },
+  "homepage": "https://github.com/dxc2007/-FCC-Timestamp-Microservice#readme",
+  "dependencies": {
+    "express": "^4.14.0"
+  }
+}
