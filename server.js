@@ -1,8 +1,11 @@
 var express = require('express')
 var app = express()
+var path = require('path')
 
+app.set('views', path.join(__dirname, 'templates'))
+app.set('view engine', 'jade')
 app.get('/', function(req, res) {
-    res.send('Hello World!)
+    res.render('index')
 })
 
 app.get('/:date', function(req, res) {
@@ -16,7 +19,7 @@ app.get('/:date', function(req, res) {
     if (!isNaN(d)) {
         return {
             unixdate: d.valueOf(),
-            readabledate: /*dpad(d.getMonth()+1) + "-" + dpad(d.getDate()) + "-" + dpad(d.getFullYear()) + "fulldate" + */d.toDateString().slice(4,15)
+            natural: /*dpad(d.getMonth()+1) + "-" + dpad(d.getDate()) + "-" + dpad(d.getFullYear()) + "fulldate" + */d.toDateString().slice(4,15)
         }
     } else {
         return false
