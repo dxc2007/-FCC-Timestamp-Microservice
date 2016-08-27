@@ -1,20 +1,24 @@
 doctype html
 html
-    head
-        title FCC Timestamp Microservice
-        link( href="css/bootstrap.min.css", rel="stylesheet")
-    body
-        h1 FCC Timestamp Microservice
-        blockquote User stories:
-            ul 1) I can pass a string as a parameter, and it will check to see whether that string contains either a unix timestamp or a natural language date (example: January 1, 2016)
-            ul 2) If it does, it returns both the Unix timestamp and the natural language form of that date.
-            ul 3) If it does not contain a date or Unix timestamp, it returns null for those properties.
-            
-        h2 Example usage:
-        br
-        code https://fcctimestampservice-dxc2007.c9users.io/Aug%2022,%202016
-        br
-        code https://fcctimestampservice-dxc2007.c9users.io/1471824000000
-        h2 Example output:
-        br
-        code {date":1471824000000,"natural":"Aug 22 2016"}
+  head
+    title FCC Timestamp Microservice
+    link(href='css/bootstrap.min.css', rel='stylesheet')
+  body
+    h1 FCC Timestamp Microservice
+    blockquote
+      h3 User stories:
+      ul
+        | 1) I can pass a string as a parameter, and it will check to see whether that string contains either a unix timestamp or a natural language date (example: January 1, 2016)
+      ul
+        | 2) If it does, it returns both the Unix timestamp and the natural language form of that date.
+      ul
+        | 3) If it does not contain a date or Unix timestamp, it returns null for those properties.
+    h2 Example usage:
+    br
+    code https://fcctimestampservice-dxc2007.c9users.io/Aug%2022,%202016
+    br
+    code https://fcctimestampservice-dxc2007.c9users.io/1471824000000
+    h2 Example output:
+    br
+    code {date":1471824000000,"natural":"Aug 22 2016"}
+
