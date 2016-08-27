@@ -23,7 +23,7 @@
   "homepage": "https://github.com/dxc2007/-FCC-Timestamp-Microservice#readme",
   "dependencies": {
     "express": "^4.14.0",
-    "pug": "^2.0.0-beta6"
+    "jade": "^1.11.0"
   },
   "engines": {
     "node": "4.4.4",
