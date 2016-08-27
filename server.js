@@ -9,7 +9,7 @@ app.set('view engine', 'jade')
 app.use(express.static(path.join(__dirname, 'templates')))
 
 app.get('/', function(req, res) {
-    res.render('index')
+    res.render('index.jade')
 })
 
 app.get('/:date', function(req, res) {
